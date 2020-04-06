@@ -27,11 +27,20 @@ public class DeployRockController : MonoBehaviour
     {
         //This creates a pellet prefab
         GameObject a = Instantiate(pelletPrefab) as GameObject;
+        GameObject b = Instantiate(pelletPrefab) as GameObject;
+        GameObject c = Instantiate(pelletPrefab) as GameObject;
 
-        //This creates a random object
-        Random random = new Random();
+        GameObject d = Instantiate(pelletPrefab) as GameObject;
+        GameObject e = Instantiate(pelletPrefab) as GameObject;
+        GameObject f = Instantiate(pelletPrefab) as GameObject;
 
-        a.transform.position = new Vector2(screenBounds.x, Random.Range(4f, -4f  ));
+        a.transform.position = new Vector2(Random.Range(screenBounds.x, screenBounds.x + 10), Random.Range(4f, -4f));
+        b.transform.position = new Vector2(Random.Range(screenBounds.x, screenBounds.x + 10), Random.Range(4f, -4f));
+        c.transform.position = new Vector2(Random.Range(screenBounds.x, screenBounds.x + 10), Random.Range(4f, -4f));
+
+        d.transform.position = new Vector2(Random.Range(screenBounds.x, screenBounds.x + 10), Random.Range(4f, -4f));
+        e.transform.position = new Vector2(Random.Range(screenBounds.x, screenBounds.x + 10), Random.Range(4f, -4f));
+        f.transform.position = new Vector2(Random.Range(screenBounds.x, screenBounds.x + 10), Random.Range(4f, -4f));
     }
     // Update is called once per frame
     void Update()
