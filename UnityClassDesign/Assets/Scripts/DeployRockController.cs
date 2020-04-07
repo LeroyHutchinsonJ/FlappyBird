@@ -8,7 +8,7 @@ public class DeployRockController : MonoBehaviour
     public GameObject pelletPrefab;
 
     //This is the respawn time of the single rock
-    public float respawnTime = 2.5f;
+    public float respawnTime = 1.5f;
 
     //This is the screen bounds of the game camera
     private Vector2 screenBounds;
