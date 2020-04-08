@@ -18,6 +18,7 @@ public class PlaneController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        PlayerPrefs.SetString("Score", seconds.ToString());
         SceneManager.LoadScene(1);
     }
 
@@ -48,6 +49,7 @@ public class PlaneController : MonoBehaviour
         
         if(transform.position.y < -6 || transform.position.y > 6 )
         {
+            PlayerPrefs.SetString("Score", seconds.ToString());
             SceneManager.LoadScene(1);
         }
 
