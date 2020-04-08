@@ -31,7 +31,7 @@ public class DeployRockPair : MonoBehaviour
         //This spawns a game object
         GameObject a = Instantiate(rockPairPrefab) as GameObject;
 
-        Random random = new Random();
+    
 
         //This sets the location of the rocks
         a.transform.position = new Vector2(screenBounds.x, Random.Range(-2f, -9f));      

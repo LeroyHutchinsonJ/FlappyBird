@@ -18,7 +18,7 @@ public class PlaneController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     // Start is called before the first frame update
@@ -48,7 +48,7 @@ public class PlaneController : MonoBehaviour
         
         if(transform.position.y < -6 || transform.position.y > 6 )
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
 
         
